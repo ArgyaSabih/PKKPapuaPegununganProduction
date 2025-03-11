@@ -18,17 +18,17 @@ export default async function ArticleHomePage() {
         <div className="flex flex-col gap-y-[2vw]">
           {/* Featured Articles with Pagination */}
           <FeaturedArticles articles={featured} />
-          <a
+          <Link
             type="button"
-            className="font-poppins hover:bg-lightblue hover:text-blue flex w-full flex-row justify-center gap-x-[1.5vw] self-center bg-[#FAFAFA] px-4 py-3 text-[2.419vw] text-[2.4vw] font-[600] text-[#2B80FF] duration-300 md:text-[2vw] lg:rounded-[0.3vw] lg:px-6 lg:text-[1.316vw] lg:text-base"
-            href="/berita"
+            className="font-poppins hover:bg-lightblue hover:text-blue flex w-full flex-row justify-center gap-x-[1.5vw] self-center bg-[#FAFAFA] px-4 py-3 text-[2.419vw] font-[600] text-[#2B80FF] duration-300 md:text-[2vw] lg:rounded-[0.3vw] lg:px-6 lg:text-[1.316vw] lg:text-base"
+            href="/artikel"
           >
             <h3>Lihat Semua Artikel</h3>
             <HiArrowNarrowRight
               style={{ fill: "#2B80FF" }}
               className="h-[3vw] w-[3vw] self-center lg:h-[1.5vw] lg:w-[1.5vw]"
             />
-          </a>
+          </Link>
         </div>
 
         {/* Other Articles */}
