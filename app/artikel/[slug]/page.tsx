@@ -2,7 +2,6 @@ import React from "react";
 import { client } from "../../../sanity/lib/client";
 import { urlFor } from "../../../sanity/lib/image";
 import { ArticleSlug } from "@/templates/components/ArticleSlug";
-import DefaultLayout from "@/templates/layouts/DefaultLayout";
 
 export async function generateStaticParams() {
   const query = `

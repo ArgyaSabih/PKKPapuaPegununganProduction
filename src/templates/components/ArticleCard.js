@@ -4,14 +4,12 @@ import Image from "next/image";
 import { cn } from "@/libs/utils";
 import { MdDateRange } from "react-icons/md";
 import { MdPerson } from "react-icons/md";
-import { urlFor } from "../../../sanity/lib/image";
 import Link from "next/link";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 export function ArticleCard({
   className = "",
   title = "",
-  description = "",
   date = "",
   author = "",
   image = "",

@@ -13,12 +13,15 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   ...compat.plugins("react", "react-hooks", "jsx-a11y", "import"),
   ...compat.config({
+    extends: ["next"],
     env: {
       es2020: true,
       node: true,
     },
     rules: {
       semi: "error",
+      "@typescript-eslint/no-explicit-any": "off",
+      "react-hooks/exhaustive-deps": "off",
     },
   }),
 ];

@@ -1,7 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
   "extends": [
-    // "airbnb",
     "next",
     "prettier",
     "plugin:prettier/recommended",

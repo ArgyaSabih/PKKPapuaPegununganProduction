@@ -8,11 +8,7 @@ interface DefaultLayoutProps {
   className?: string;
 }
 
-const DefaultLayout: React.FC<DefaultLayoutProps> = ({
-  children = "",
-  url = "",
-  className = "",
-}) => {
+const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children = "", className = "" }) => {
   return (
     <>
       <section className={cn("min-h-screen", className)}>{children}</section>
