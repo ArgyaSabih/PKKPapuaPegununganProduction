@@ -11,10 +11,8 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
-  ...compat.plugins("airbnb", "react", "react-hooks", "jsx-a11y", "import"),
+  ...compat.plugins("react", "react-hooks", "jsx-a11y", "import"),
   ...compat.config({
-    plugins: ["airbnb"],
-    extends: "standard",
     env: {
       es2020: true,
       node: true,
