@@ -25,7 +25,7 @@ const cards = [
   },
   {
     title: "Sekretariat",
-    link: "/sekretariat",
+    link: "/pokja/sekretariat",
     image: "/components/homepage/sekretariat.png",
   },
 ];

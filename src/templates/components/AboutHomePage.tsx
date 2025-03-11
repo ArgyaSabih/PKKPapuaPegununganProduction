@@ -23,7 +23,7 @@ const AboutHomePage = () => {
               Perencanaan Sehat.
             </p>
             <Link
-              href="/about"
+              href="/tentang"
               className="inline-flex w-fit items-center rounded-md bg-blue-500 px-[2.2vw] py-[1.2vw] text-[3.5vw] text-white transition-colors hover:bg-blue-600 xs:text-[3vw] sm:px-4 sm:py-2 sm:text-base lg:px-6 lg:py-2 2xl:px-8 2xl:py-4 2xl:text-lg"
             >
               Baca Selengkapnya

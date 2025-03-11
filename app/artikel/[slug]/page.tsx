@@ -16,7 +16,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const query = `
     *[_type == "blog" && slug.current == $slug][0] {
       title,
@@ -29,7 +29,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
     }
   `;
 
-  const article = await client.fetch(query, { slug: params.slug });
+  const article = await client.fetch(query, { slug: (await params).slug });
 
   if (!article) {
     return (
