@@ -8,7 +8,7 @@ import DefaultLayout from "../layouts/DefaultLayout";
 
 export function ArticleSlug({ title = "", date = "", author = "", images = [], body }) {
   return (
-    // <div className={cn("flex flex-col gap-y-[1.6vw] lg:gap-y-[1vw] lg:px-4", className)} {...props}>
+    // <div className={cn("flex flex-col gap-y-[1.6vw] lg:gap-y-[1vw] lg:px-4", className)}}>
     <DefaultLayout>
       <HeaderSlug title={title} date={date} author={author} />
       <ContentSlug body={body} />
@@ -22,14 +22,14 @@ export function ArticleSlug({ title = "", date = "", author = "", images = [], b
 export function HeaderSlug({ title, date, author }) {
   return (
     <div className="mb-[1.5vw] flex flex-col items-center justify-center gap-y-[2vw] lg:gap-y-[2vw]">
-      <h1 className="font-poppins text-[6.667vw] font-semibold text-[#1A7AE3] lg:text-[3.333vw]">
+      <h1 className="font-poppins text-center text-[6.667vw] font-semibold text-[#1A7AE3] lg:text-[3.333vw]">
         {title}
       </h1>
       <div className="flex flex-row items-center justify-center gap-2">
         <MdDateRange style={{ fill: "#1A7AE3" }} />
-        <p className="font-poppins text-[2.222vw] lg:text-[1.098vw]">{date}</p>
+        <p className="font-poppins text-[3.222vw] lg:text-[1.098vw]">{date}</p>
         <MdPerson color="#1A7AE3" />
-        <p className="font-poppins text-[2.222vw] lg:text-[1.098vw]">{author}</p>
+        <p className="font-poppins text-[3.222vw] lg:text-[1.098vw]">{author}</p>
       </div>
     </div>
   );
@@ -37,7 +37,7 @@ export function HeaderSlug({ title, date, author }) {
 
 export function ContentSlug({ body }) {
   return (
-    <article className="prose-p:font-poppins prose-headings:font-poppins prose-a:font-poppins prose-ol:font-poppins prose-ul:font-poppins prose-li:font-poppins prose prose-lg prose-blue mt-[1vw] w-full justify-center gap-y-3 lg:prose-2xl prose-p:text-justify lg:max-w-none">
+    <article className="prose-p:font-poppins prose-headings:font-poppins prose-a:font-poppins prose-ol:font-poppins prose-ul:font-poppins prose-li:font-poppins prose prose-xl prose-blue mt-[1vw] justify-center gap-y-3 lg:prose-2xl prose-p:text-justify lg:max-w-full">
       <PortableText value={body} />
     </article>
   );
@@ -66,7 +66,7 @@ export function GallerySlug({ images }) {
   );
 }
 
-export function ArticleListSlug({}) {
+export function ArticleListSlug() {
   return (
     <div className="mt-[3vw] flex w-full flex-col items-center justify-center gap-y-[3vw] lg:mt-[1.5vw] lg:gap-y-[1.5vw]">
       <div className="flex w-full flex-row items-center justify-center gap-x-[28px]">

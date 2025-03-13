@@ -39,7 +39,7 @@ async function fetchArticles() {
       date: `${year}-${month}-${day}`,
       author: item.author?.name || "Unknown",
       image: urlFor(item.mainImage[0]).url(),
-      url: `/berita/${item.slug?.current}`,
+      url: `/artikel/${item.slug?.current}`,
     };
   });
 }
@@ -141,7 +141,7 @@ export function ArticleList({ pagination = false, limit }: ArticleListProps) {
     <DefaultLayout className="!h-fit !min-h-fit !px-0">
       {displayedArticles.length ? (
         <>
-          <div className="grid w-full grid-cols-2 items-center justify-center text-black lg:grid-cols-3">
+          <div className="grid w-full grid-cols-2 items-center justify-center gap-[2vw] text-black lg:grid-cols-3 lg:gap-[1vw]">
             {getCurrentPageData().map((item, index) => (
               <ArticleCard key={index} {...item} />
             ))}

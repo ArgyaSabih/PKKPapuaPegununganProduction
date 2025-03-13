@@ -19,7 +19,7 @@ export function ArticleCard({
   return (
     <div
       className={cn(
-        "flex h-fit w-full flex-col rounded-[0.931vw] bg-white drop-shadow-lg duration-300 hover:scale-[1.05] hover:bg-gray-100 lg:rounded-[10.86px]",
+        "grid h-full w-full grid-rows-[auto,1fr] rounded-[0.931vw] bg-white drop-shadow-lg duration-300 hover:scale-[1.05] hover:bg-gray-100 lg:rounded-[10.86px]",
         className,
       )}
       {...props}
@@ -48,7 +48,7 @@ export function FooterDetails({ title, author, date, className, url, ...props })
   return (
     <div
       className={cn(
-        "flex h-fit w-full flex-col items-center justify-center gap-y-[2.333vw] p-[2px] lg:gap-y-[10px] lg:p-[3vw]",
+        "flex h-fit w-full flex-grow flex-col items-center justify-center gap-y-[2.333vw] p-[3vw] lg:gap-y-[10px] lg:p-[2vw]",
         className,
       )}
       {...props}
@@ -57,15 +57,15 @@ export function FooterDetails({ title, author, date, className, url, ...props })
         {title}
       </h3>
       <div className="font-poppins flex flex-row items-center justify-center max-lg:gap-2 lg:flex-row lg:gap-x-[10px]">
-        <div className="flex flex-row gap-2">
-          <MdDateRange style={{ fill: "#1A7AE3" }} className="h-4 w-4" />
-          <p className="font-poppins self-center text-[1.3vw] text-sm font-medium leading-snug text-black lg:text-sm">
+        <div className="flex flex-row items-center justify-center gap-2">
+          <MdDateRange style={{ fill: "#1A7AE3" }} className="" />
+          <p className="font-poppins self-center text-[1.3vw] font-medium leading-snug text-black lg:text-[0.8vw]">
             {date}
           </p>
         </div>
-        <div className="flex flex-row gap-2">
-          <MdPerson color="#1A7AE3" className="h-4 w-4" />
-          <p className="font-poppins self-center text-[1.3vw] font-medium leading-snug text-black lg:text-sm">
+        <div className="flex flex-row items-center justify-center gap-2">
+          <MdPerson color="#1A7AE3" className="" />
+          <p className="font-poppins self-center text-[1.3vw] font-medium leading-snug text-black lg:text-[0.8vw]">
             {author}
           </p>
         </div>

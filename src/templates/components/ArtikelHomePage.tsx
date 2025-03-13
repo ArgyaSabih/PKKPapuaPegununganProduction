@@ -11,10 +11,13 @@ export default async function ArticleHomePage() {
 
   return (
     <DefaultLayout className="flex flex-col justify-center gap-y-[4vw] bg-[#1A7AE3] px-[20px] text-white md:px-[100px] lg:gap-y-[3vw] lg:px-[140px] xl:px-[200px]">
-      <h1 className="font-poppins self-center text-[5.556vw] font-bold text-white lg:text-[3.333vw]">
+      <h1
+        data-gsap="down"
+        className="font-poppins self-center text-[5.556vw] font-bold text-white lg:text-[3.333vw]"
+      >
         Artikel Terkini
       </h1>
-      <div className="flex items-center justify-center gap-x-[5vw] lg:gap-x-[3vw]">
+      <div data-gsap="up" className="flex items-center justify-center gap-x-[5vw] lg:gap-x-[3vw]">
         <div className="flex flex-col gap-y-[2vw]">
           {/* Featured Articles with Pagination */}
           <FeaturedArticles articles={featured} />
