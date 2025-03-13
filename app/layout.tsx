@@ -14,6 +14,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "PKK Papua Pegunungan",
   description: "Pemberdayaan & Kesejahteraan Keluarga (PKK) Provinsi Papua Pegunungan",
+  icons: {
+    icon: "/templates/components/PKK.png",
+  },
 };
 
 export default function RootLayout({
