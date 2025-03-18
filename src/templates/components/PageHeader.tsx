@@ -4,6 +4,9 @@ export function PageHeader({ title }: { title: string }) {
   return (
     <section className="w-full space-y-6">
       <h1 className="text-center text-3xl font-semibold text-[#1A7AE3]">{title}</h1>
+      <p className="text-center text-sm font-semibold text-gray-700 md:text-base">
+        API bersifat testing sebelum pemindahan ke instagram resmi PKK Papua Pegunungan
+      </p>
       <div className="relative h-14 space-y-2 py-6">
         <div className="h-1 bg-[#1A7AE3]" />
         <div className="mx-6 h-1 bg-[#EEEE22] lg:mx-12" />
